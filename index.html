@@ -1,359 +1,247 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سياسة الخصوصية — ذهبي | Privacy Policy — Dhahabi</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
-      background: #0d0d0d;
-      color: #e8e0cc;
-      line-height: 1.8;
-      padding: 40px 20px;
-    }
-
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .logo {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #C9A84C;
-      text-align: center;
-      margin-bottom: 6px;
-      letter-spacing: 1px;
-    }
-
-    .tagline {
-      text-align: center;
-      color: #8a9e94;
-      font-size: 0.9rem;
-      margin-bottom: 40px;
-    }
-
-    h1 { font-size: 1.5rem; color: #C9A84C; margin-bottom: 6px; }
-    h2 { font-size: 1.1rem; color: #C9A84C; margin: 28px 0 10px; }
-
-    p { margin-bottom: 12px; color: #ccc; }
-
-    ul {
-      margin: 0 0 12px 0;
-      padding-right: 20px;
-      color: #ccc;
-    }
-
-    li { margin-bottom: 6px; }
-
-    .section {
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 14px;
-      padding: 28px;
-      margin-bottom: 28px;
-    }
-
-    .updated {
-      text-align: center;
-      color: #555;
-      font-size: 0.8rem;
-      margin-top: 40px;
-    }
-
-    .lang-toggle {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-
-    .lang-toggle a {
-      color: #C9A84C;
-      text-decoration: none;
-      font-size: 0.9rem;
-      border: 1px solid #C9A84C44;
-      padding: 6px 16px;
-      border-radius: 20px;
-      margin: 0 6px;
-    }
-
-    .lang-toggle a:hover { background: #C9A84C22; }
-
-    #english { display: none; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>سياسة الخصوصية — ذهبي | Privacy Policy — Dhahabi</title>
+<style>
+  :root {
+    --gold: #c9a227;
+    --gold-dark: #8a6d1a;
+    --bg: #fbfaf6;
+    --ink: #1c1a16;
+    --muted: #6b665a;
+    --line: #e7e2d3;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, "SF Pro Text", "Segoe UI", "Noto Naskh Arabic", "Tajawal", system-ui, sans-serif; line-height: 1.7; }
+  header.brand {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+    color: #fff;
+    padding: 40px 20px 28px;
+    text-align: center;
+  }
+  header.brand h1 { margin: 0 0 6px; font-size: 32px; letter-spacing: 0.5px; }
+  header.brand p { margin: 0; opacity: 0.92; font-size: 15px; }
+  nav.langtabs {
+    display: flex; justify-content: center; gap: 8px;
+    background: #fff; border-bottom: 1px solid var(--line);
+    padding: 10px;
+    position: sticky; top: 0; z-index: 10;
+  }
+  nav.langtabs a {
+    text-decoration: none; color: var(--ink);
+    padding: 8px 18px; border-radius: 999px;
+    border: 1px solid var(--line);
+    font-size: 14px; font-weight: 500;
+  }
+  nav.langtabs a:hover { background: var(--bg); }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 22px 60px; }
+  section.lang { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 0 rgba(0,0,0,0.02); }
+  section.lang.en { direction: ltr; text-align: left; }
+  section.lang.ar { direction: rtl; text-align: right; }
+  section.lang h2 { font-size: 26px; margin: 0 0 6px; color: var(--ink); border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 4px; }
+  section.lang h3 { font-size: 18px; margin: 26px 0 8px; color: var(--gold-dark); }
+  section.lang .updated { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+  section.lang p, section.lang li { font-size: 15.5px; }
+  section.lang ul { padding-inline-start: 22px; }
+  section.lang li { margin-bottom: 6px; }
+  section.lang a { color: var(--gold-dark); }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px 12px 40px; }
+</style>
 </head>
 <body>
-<div class="container">
 
-  <div class="logo">ذهبي</div>
-  <div class="tagline">أسعار الذهب في السعودية · Saudi Gold Prices</div>
+<header class="brand">
+  <h1>ذهبي</h1>
+  <p>أسعار الذهب في السعودية · Saudi Gold Prices</p>
+</header>
 
-  <div class="lang-toggle">
-    <a href="#" onclick="showAr()">العربية</a>
-    <a href="#" onclick="showEn()">English</a>
-  </div>
+<nav class="langtabs">
+  <a href="#ar">العربية</a>
+  <a href="#en">English</a>
+</nav>
 
-  <!-- ═══════════════ ARABIC ═══════════════ -->
-  <div id="arabic">
+<main>
 
-    <div class="section">
-      <h1>سياسة الخصوصية</h1>
-      <p>آخر تحديث: ٢٣ مايو ٢٠٢٦</p>
-      <p>
-        تطبيق <strong>ذهبي</strong> هو تطبيق مجاني لعرض أسعار الذهب في المملكة العربية السعودية.
-        نحن نأخذ خصوصيتك بجدية تامة. توضح هذه السياسة ما نجمعه وما لا نجمعه.
-      </p>
-    </div>
+<!-- ========== ARABIC ========== -->
+<section id="ar" class="lang ar">
+  <h2>سياسة الخصوصية</h2>
+  <div class="updated">آخر تحديث: ٢٣ مايو ٢٠٢٦</div>
 
-    <div class="section">
-      <h2>ما الذي نجمعه؟</h2>
-      <p>نجمع الحد الأدنى من البيانات اللازمة لتشغيل الإشعارات:</p>
-      <ul>
-        <li>
-          <strong>رمز الإشعار (FCM Token)</strong> — يُولَّد تلقائياً من نظام Firebase
-          ويُخزَّن في خوادمنا على Supabase. يُستخدم فقط لإرسال الإشعارات التي طلبتها.
-          لا يحتوي على اسمك أو بريدك أو أي معلومات شخصية.
-        </li>
-        <li>
-          <strong>تنبيهات الأسعار</strong> — إذا أضفت تنبيه سعر (مثل "أشعرني عندما يصل عيار ٢١ إلى ٤٨٠ ريالاً")،
-          فإننا نخزّن العيار والسعر المستهدف والاتجاه (ارتفاع/انخفاض) وحالة التنبيه.
-          لا يرتبط هذا بأي هوية شخصية.
-        </li>
-      </ul>
-    </div>
+  <p>
+    تطبيق <strong>ذهبي</strong> هو تطبيق مجاني لعرض أسعار الذهب في المملكة العربية السعودية.
+    نحن نأخذ خصوصيتك بجدية تامة. توضح هذه السياسة ما نجمعه وما لا نجمعه.
+  </p>
 
-    <div class="section">
-      <h2>ما الذي لا نجمعه؟</h2>
-      <ul>
-        <li>لا نجمع الاسم أو البريد الإلكتروني أو رقم الهاتف</li>
-        <li>لا يوجد تسجيل دخول أو حسابات مستخدمين</li>
-        <li>لا نتتبع موقعك الجغرافي</li>
-        <li>لا نستخدم أدوات تحليلات أو تتبع سلوك المستخدم</li>
-        <li>لا نعرض إعلانات ولا نشارك بياناتك مع أي جهة تسويقية</li>
-        <li>لا توجد مدفوعات داخل التطبيق</li>
-      </ul>
-    </div>
+  <h3>ما الذي نجمعه؟</h3>
+  <p>نجمع الحد الأدنى من البيانات اللازمة لتشغيل الإشعارات:</p>
+  <ul>
+    <li><strong>رمز الإشعار (FCM Token)</strong> — يُولَّد تلقائياً من نظام Firebase ويُخزَّن في خوادمنا على Supabase. يُستخدم فقط لإرسال الإشعارات التي طلبتها. لا يحتوي على اسمك أو بريدك أو أي معلومات شخصية.</li>
+    <li><strong>تنبيهات الأسعار</strong> — إذا أضفت تنبيه سعر (مثل "أشعرني عندما يصل عيار ٢١ إلى ٤٨٠ ريالاً")، فإننا نخزّن العيار والسعر المستهدف والاتجاه (ارتفاع/انخفاض) وحالة التنبيه. لا يرتبط هذا بأي هوية شخصية.</li>
+  </ul>
 
-    <div class="section">
-      <h2>الخدمات الخارجية المستخدمة</h2>
-      <ul>
-        <li><strong>Supabase</strong> — تخزين رموز الإشعارات وتنبيهات الأسعار</li>
-        <li><strong>Firebase Cloud Messaging</strong> — إرسال الإشعارات فقط</li>
-        <li><strong>GoldAPI.io</strong> — مصدر بيانات أسعار الذهب اللحظية</li>
-        <li><strong>stooq.com</strong> — بيانات الأسعار التاريخية (٥٢ أسبوعاً)</li>
-      </ul>
-      <p>لا تتلقى هذه الخدمات أي بيانات شخصية تعريفية منك.</p>
-    </div>
+  <h3>ما الذي لا نجمعه؟</h3>
+  <ul>
+    <li>لا نجمع الاسم أو البريد الإلكتروني أو رقم الهاتف</li>
+    <li>لا يوجد تسجيل دخول أو حسابات مستخدمين</li>
+    <li>لا نتتبع موقعك الجغرافي</li>
+    <li>لا نستخدم أدوات تحليلات أو تتبع سلوك المستخدم</li>
+    <li>لا نعرض إعلانات ولا نشارك بياناتك مع أي جهة تسويقية</li>
+    <li>لا توجد مدفوعات داخل التطبيق</li>
+  </ul>
 
-    <div class="section">
-      <h2>الإشعارات</h2>
-      <p>
-        الإشعارات اختيارية بالكامل. يمكنك تفعيلها أو تعطيلها من إعدادات التطبيق أو
-        من إعدادات الجهاز في أي وقت. أنواع الإشعارات:
-      </p>
-      <ul>
-        <li>ملخص يومي للأسعار (تختار وقته وعياراته)</li>
-        <li>تنبيه عند بلوغ سعر مستهدف تحدده أنت</li>
-        <li>تنبيه عند تحرك السعر بنسبة ≥١٫٥٪ في اليوم</li>
-      </ul>
-    </div>
+  <h3>الخدمات الخارجية المستخدمة</h3>
+  <ul>
+    <li><strong>Supabase</strong> — تخزين رموز الإشعارات وتنبيهات الأسعار</li>
+    <li><strong>Firebase Cloud Messaging</strong> — إرسال الإشعارات فقط</li>
+    <li><strong>GoldAPI.io</strong> — مصدر بيانات أسعار الذهب اللحظية</li>
+    <li><strong>stooq.com</strong> — بيانات الأسعار التاريخية (٥٢ أسبوعاً)</li>
+  </ul>
+  <p>لا تتلقى هذه الخدمات أي بيانات شخصية تعريفية منك.</p>
 
-    <div class="section">
-      <h2>الاحتفاظ بالبيانات</h2>
-      <p>
-        نحتفظ برمز الإشعار وتنبيهات الأسعار طالما يبقى التطبيق مثبتاً على جهازك.
-        عند حذف التطبيق أو تعطيل الإشعارات، يتم تنظيف الرمز تلقائياً خلال ٣٠ يوماً.
-      </p>
-    </div>
+  <h3>الإشعارات</h3>
+  <p>الإشعارات اختيارية بالكامل. يمكنك تفعيلها أو تعطيلها من إعدادات التطبيق أو من إعدادات الجهاز في أي وقت. أنواع الإشعارات:</p>
+  <ul>
+    <li>ملخص يومي للأسعار (تختار وقته وعياراته)</li>
+    <li>تنبيه عند بلوغ سعر مستهدف تحدده أنت</li>
+    <li>تنبيه عند تحرك السعر بنسبة ≥١٫٥٪ في اليوم</li>
+  </ul>
 
-    <div class="section">
-      <h2>حقوقك</h2>
-      <p>
-        بما أننا لا نخزن أي معلومات تعريفية شخصية، لا يوجد حساب يمكن حذفه.
-        لإزالة بياناتك من خوادمنا، احذف التطبيق من جهازك — سيتم تنظيف الرمز تلقائياً.
-        للاستفسار أو طلب الحذف الفوري، راسلنا على البريد الإلكتروني أدناه.
-      </p>
-      <p>
-        يلتزم هذا التطبيق بأحكام نظام حماية البيانات الشخصية في المملكة العربية السعودية (نظام PDPL).
-      </p>
-    </div>
+  <h3>الاحتفاظ بالبيانات</h3>
+  <p>
+    نحتفظ برمز الإشعار وتنبيهات الأسعار طالما يبقى التطبيق مثبتاً على جهازك.
+    عند حذف التطبيق أو تعطيل الإشعارات من إعدادات الجهاز، يصبح رمز الإشعار غير صالح
+    ويتم حذفه من خوادمنا خلال ٣٠ يوماً.
+  </p>
 
-    <div class="section">
-      <h2>خصوصية الأطفال</h2>
-      <p>
-        هذا التطبيق غير موجّه للأطفال دون سن ١٣ عاماً.
-        لا نجمع عن قصد أي معلومات من الأطفال.
-      </p>
-    </div>
+  <h3>حقوقك</h3>
+  <p>
+    بما أننا لا نخزن أي معلومات تعريفية، لا يوجد حساب يمكن حذفه يدوياً.
+    لإزالة بياناتك من خوادمنا، احذف التطبيق من جهازك — سيتم تنظيف الرمز تلقائياً.
+    للاستفسار أو طلب حذف فوري راسلنا على البريد أدناه.
+  </p>
 
-    <div class="section">
-      <h2>إخلاء المسؤولية</h2>
-      <p>
-        أسعار الذهب المعروضة هي أسعار المعدن الخام ولا تشمل أجور الصياغة أو هامش التاجر.
-        هذا التطبيق للأغراض المعلوماتية فقط وليس نصيحة مالية أو استثمارية.
-      </p>
-    </div>
+  <h3>خصوصية الأطفال</h3>
+  <p>
+    هذا التطبيق غير موجَّه للأطفال دون ١٣ عاماً. لا نجمع عن قصد أي معلومات من الأطفال.
+    إذا اكتشفت أن طفلاً قدّم أي بيانات لنا فيرجى التواصل معنا فوراً وسنقوم بحذفها.
+  </p>
 
-    <div class="section">
-      <h2>التغييرات على هذه السياسة</h2>
-      <p>
-        قد نقوم بتحديث هذه السياسة من وقت لآخر.
-        سيُعرض تاريخ آخر تحديث في أعلى الصفحة دائماً.
-      </p>
-    </div>
+  <h3>إخلاء المسؤولية</h3>
+  <p>
+    أسعار الذهب المعروضة هي أسعار المعدن الخام ولا تشمل أجور الصياغة أو هامش التاجر.
+    هذا التطبيق للأغراض المعلوماتية فقط وليس نصيحة مالية أو استثمارية.
+  </p>
 
-    <div class="section">
-      <h2>تواصل معنا</h2>
-      <p>
-        لأي استفسار بخصوص الخصوصية:
-        <a href="mailto:ska.locale@gmail.com" style="color:#C9A84C;">ska.locale@gmail.com</a>
-      </p>
-    </div>
+  <h3>الامتثال التنظيمي</h3>
+  <p>
+    نلتزم بأحكام نظام حماية البيانات الشخصية في المملكة العربية السعودية (PDPL)
+    ونتعامل مع بياناتك بما يتوافق مع المعايير الدولية لحماية الخصوصية.
+  </p>
 
-  </div>
-  <!-- end arabic -->
+  <h3>التغييرات على هذه السياسة</h3>
+  <p>
+    قد نقوم بتحديث هذه السياسة من وقت لآخر. سيُعرض تاريخ آخر تحديث في أعلى الصفحة.
+    التغييرات الجوهرية ستُعلَن داخل التطبيق قبل تطبيقها.
+  </p>
 
-  <!-- ═══════════════ ENGLISH ═══════════════ -->
-  <div id="english">
+  <h3>تواصل معنا</h3>
+  <p>لأي استفسار بخصوص الخصوصية: <a href="mailto:ska.locale@gmail.com">ska.locale@gmail.com</a></p>
+</section>
 
-    <div class="section">
-      <h1>Privacy Policy</h1>
-      <p>Last updated: May 23, 2026</p>
-      <p>
-        <strong>Dhahabi (ذهبي)</strong> is a free app that displays live gold prices in Saudi Arabia.
-        We take your privacy seriously. This policy explains exactly what we collect and what we don't.
-      </p>
-    </div>
+<!-- ========== ENGLISH ========== -->
+<section id="en" class="lang en">
+  <h2>Privacy Policy</h2>
+  <div class="updated">Last updated: May 23, 2026</div>
 
-    <div class="section">
-      <h2>What we collect</h2>
-      <p>We collect the minimum data needed to operate push notifications:</p>
-      <ul>
-        <li>
-          <strong>Push token (FCM Token)</strong> — automatically generated by Firebase and stored
-          on our Supabase server. Used only to deliver notifications you requested.
-          It contains no name, email, or personal identifiers.
-        </li>
-        <li>
-          <strong>Price alerts</strong> — if you create a price alert (e.g. "notify me when 21K reaches 480 SAR"),
-          we store the karat, target price, direction (above/below), and active status.
-          This is not linked to any personal identity.
-        </li>
-      </ul>
-    </div>
+  <p>
+    <strong>Dhahabi (ذهبي)</strong> is a free app that displays live gold prices in Saudi Arabia.
+    We take your privacy seriously. This policy explains exactly what we collect and what we don't.
+  </p>
 
-    <div class="section">
-      <h2>What we do NOT collect</h2>
-      <ul>
-        <li>No name, email address, or phone number</li>
-        <li>No user accounts or login</li>
-        <li>No location data</li>
-        <li>No analytics or behavioral tracking</li>
-        <li>No advertising or data sharing with marketing parties</li>
-        <li>No in-app purchases or payment data</li>
-      </ul>
-    </div>
+  <h3>What we collect</h3>
+  <p>We collect the minimum data needed to operate push notifications:</p>
+  <ul>
+    <li><strong>Push token (FCM Token)</strong> — automatically generated by Firebase and stored on our Supabase server. Used only to deliver notifications you requested. It contains no name, email, or personal identifiers.</li>
+    <li><strong>Price alerts</strong> — if you create a price alert (e.g. "notify me when 21K reaches 480 SAR"), we store the karat, target price, direction (above/below), and active status. This is not linked to any personal identity.</li>
+  </ul>
 
-    <div class="section">
-      <h2>Third-party services</h2>
-      <ul>
-        <li><strong>Supabase</strong> — stores push tokens and price alert preferences</li>
-        <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications only</li>
-        <li><strong>GoldAPI.io</strong> — source of live gold price data</li>
-        <li><strong>stooq.com</strong> — historical price data (52-week range)</li>
-      </ul>
-      <p>None of these services receive personally identifiable information from you.</p>
-    </div>
+  <h3>What we do NOT collect</h3>
+  <ul>
+    <li>No name, email address, or phone number</li>
+    <li>No user accounts or login</li>
+    <li>No location data</li>
+    <li>No analytics or behavioral tracking</li>
+    <li>No advertising or data sharing with marketing parties</li>
+    <li>No in-app purchases or payment data</li>
+  </ul>
 
-    <div class="section">
-      <h2>Notifications</h2>
-      <p>
-        All notifications are fully optional. You can enable or disable them at any time
-        from the app's Settings tab or from your device Settings. Notification types:
-      </p>
-      <ul>
-        <li>Daily price summary (you choose the time and karat)</li>
-        <li>Personal price alert when gold crosses a target you set</li>
-        <li>Movement alert when gold moves ≥1.5% in a single day</li>
-      </ul>
-    </div>
+  <h3>Third-party services</h3>
+  <ul>
+    <li><strong>Supabase</strong> — stores push tokens and price alert preferences</li>
+    <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications only</li>
+    <li><strong>GoldAPI.io</strong> — source of live gold price data</li>
+    <li><strong>stooq.com</strong> — historical price data (52-week range)</li>
+  </ul>
+  <p>None of these services receive personally identifiable information from you.</p>
 
-    <div class="section">
-      <h2>Data Retention</h2>
-      <p>
-        We retain your push token and price alerts for as long as the app remains installed
-        on your device. When you uninstall the app or disable notifications, your token is
-        cleaned up automatically within 30 days.
-      </p>
-    </div>
+  <h3>Notifications</h3>
+  <p>All notifications are fully optional. You can enable or disable them at any time from the app's Settings tab or from your device Settings. Notification types:</p>
+  <ul>
+    <li>Daily price summary (you choose the time and karat)</li>
+    <li>Personal price alert when gold crosses a target you set</li>
+    <li>Movement alert when gold moves ≥1.5% in a single day</li>
+  </ul>
 
-    <div class="section">
-      <h2>Your Rights</h2>
-      <p>
-        Because we don't store any personally identifying information, there is no account to delete.
-        To remove your data from our servers, uninstall the app — your token will be cleaned up automatically.
-        For inquiries or to request immediate deletion, contact us at the email below.
-      </p>
-      <p>
-        This app complies with Saudi Arabia's Personal Data Protection Law (PDPL).
-      </p>
-    </div>
+  <h3>Data Retention</h3>
+  <p>
+    We retain your push token and price alerts for as long as the app remains installed on your device.
+    When you uninstall the app or disable notifications in your device settings, the push token becomes
+    invalid and is removed from our servers within 30 days.
+  </p>
 
-    <div class="section">
-      <h2>Children's Privacy</h2>
-      <p>
-        This app is not directed at children under 13.
-        We do not knowingly collect information from children.
-      </p>
-    </div>
+  <h3>Your Rights</h3>
+  <p>
+    Because we don't store any personally identifying information, there is no account for you to delete manually.
+    To remove your data from our servers, uninstall the app from your device — your token will be cleaned up automatically.
+    For inquiries or to request immediate deletion, contact us at the email below.
+  </p>
 
-    <div class="section">
-      <h2>Disclaimer</h2>
-      <p>
-        Gold prices shown are raw spot prices and do not include dealer spreads or workmanship fees.
-        This app is for informational purposes only and does not constitute financial or investment advice.
-      </p>
-    </div>
+  <h3>Children's Privacy</h3>
+  <p>
+    This app is not directed at children under 13. We do not knowingly collect information from children.
+    If you believe a child has provided us with any data, please contact us and we will delete it immediately.
+  </p>
 
-    <div class="section">
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this policy from time to time.
-        The "Last updated" date at the top always reflects the most recent revision.
-      </p>
-    </div>
+  <h3>Disclaimer</h3>
+  <p>
+    Gold prices shown are raw spot prices and do not include dealer spreads or workmanship fees.
+    This app is for informational purposes only and does not constitute financial or investment advice.
+  </p>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>
-        For any privacy-related questions:
-        <a href="mailto:ska.locale@gmail.com" style="color:#C9A84C;">ska.locale@gmail.com</a>
-      </p>
-    </div>
+  <h3>Regulatory Compliance</h3>
+  <p>
+    We adhere to Saudi Arabia's Personal Data Protection Law (PDPL) and handle your data
+    in accordance with international privacy standards.
+  </p>
 
-  </div>
-  <!-- end english -->
+  <h3>Changes to This Policy</h3>
+  <p>
+    We may update this policy from time to time. The "Last updated" date at the top reflects the most recent revision.
+    Material changes will be announced inside the app before they take effect.
+  </p>
 
-  <p class="updated">© 2026 Dhahabi · ذهبي · com.dhahabi.goldapp</p>
+  <h3>Contact</h3>
+  <p>For any privacy-related questions: <a href="mailto:ska.locale@gmail.com">ska.locale@gmail.com</a></p>
+</section>
 
-</div>
+</main>
 
-<script>
-  function showAr() {
-    document.getElementById('arabic').style.display = 'block';
-    document.getElementById('english').style.display = 'none';
-    document.documentElement.setAttribute('dir', 'rtl');
-    document.documentElement.setAttribute('lang', 'ar');
-  }
-  function showEn() {
-    document.getElementById('arabic').style.display = 'none';
-    document.getElementById('english').style.display = 'block';
-    document.documentElement.setAttribute('dir', 'ltr');
-    document.documentElement.setAttribute('lang', 'en');
-  }
-</script>
+<footer>
+  © 2026 Dhahabi · ذهبي · com.dhahabi.goldapp
+</footer>
 
 </body>
 </html>
