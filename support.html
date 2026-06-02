@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhahabi — Support · ذهبي — الدعم</title>
+  <meta name="description" content="Support and FAQ for Dhahabi (ذهبي), the Saudi gold price tracker. الدعم والأسئلة الشائعة لتطبيق ذهبي." />
+  <style>
+    :root {
+      --bg: #0D1A14;
+      --card: #1A2820;
+      --gold: #D4AF37;
+      --up: #4CAF82;
+      --text: #EAF2EC;
+      --muted: #9FB3A8;
+      --border: #2A3A30;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+
+    header { text-align: center; padding: 24px 0 8px; }
+    .logo {
+      width: 64px; height: 64px; border-radius: 16px;
+      background: linear-gradient(145deg, var(--gold), #b8932c);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 700; color: #1a1a1a;
+      box-shadow: 0 6px 20px rgba(212,175,55,.25);
+    }
+    h1 { font-size: 26px; margin: 14px 0 4px; }
+    .tagline { color: var(--muted); margin: 0; font-size: 15px; }
+
+    .langbar { text-align: center; margin: 22px 0 30px; }
+    .langbar a {
+      display: inline-block; padding: 7px 18px; margin: 0 4px;
+      border: 1px solid var(--border); border-radius: 999px;
+      color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 600;
+      transition: all .2s;
+    }
+    .langbar a:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Language toggle: show English by default; show Arabic when #ar is targeted */
+    #ar { display: none; }
+    #en:target { display: block; }
+    #ar:target { display: block; }
+    #en:target ~ #ar { display: none; }
+    /* When #ar is the target, hide #en */
+    #ar:target { }
+    body:has(#ar:target) #en { display: none; }
+    body:has(#ar:target) #ar { display: block; }
+
+    section[dir="rtl"] { text-align: right; }
+
+    h2 {
+      font-size: 20px; color: var(--gold); margin: 36px 0 6px;
+      border-bottom: 1px solid var(--border); padding-bottom: 8px;
+    }
+    .faq { margin: 18px 0; }
+    .faq details {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 4px 16px; margin: 10px 0;
+    }
+    .faq summary {
+      cursor: pointer; font-weight: 600; font-size: 16px; padding: 12px 0;
+      list-style: none; color: var(--text);
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "＋"; float: right; color: var(--gold); font-weight: 700; }
+    section[dir="rtl"] .faq summary::after { float: left; }
+    .faq details[open] summary::after { content: "－"; }
+    .faq p { color: var(--muted); margin: 0 0 14px; font-size: 15px; }
+
+    .contact {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 22px; margin-top: 30px; text-align: center;
+    }
+    .contact a { color: var(--gold); font-weight: 700; text-decoration: none; font-size: 17px; }
+    .contact a:hover { text-decoration: underline; }
+    .links { margin-top: 14px; font-size: 14px; }
+    .links a { color: var(--up); text-decoration: none; }
+
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 40px; }
+    .updated { color: var(--muted); font-size: 13px; text-align: center; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">ذ</div>
+      <h1>Dhahabi · ذهبي</h1>
+      <p class="tagline">Saudi Gold Price Tracker · متتبّع أسعار الذهب</p>
+    </header>
+
+    <div class="langbar">
+      <a href="#en">English</a>
+      <a href="#ar">العربية</a>
+    </div>
+
+    <!-- ENGLISH -->
+    <section id="en" dir="ltr">
+      <h2>Support &amp; FAQ</h2>
+      <div class="faq">
+        <details open>
+          <summary>How do I set a price alert?</summary>
+          <p>Open the <strong>Alerts</strong> tab, tap the add (+) button, choose the karat, set your target price, and select whether you want to be notified when the price rises above or falls below it. You'll get a push notification the moment your target is reached.</p>
+        </details>
+        <details>
+          <summary>Why is the price slightly different from my local jeweler?</summary>
+          <p>Dhahabi shows the live international spot gold price converted to Saudi Riyal per gram. Local jewelers add their own workmanship and margin on top, so the shop price is normally higher than the raw metal price you see here.</p>
+        </details>
+        <details>
+          <summary>What do the karats (24, 22, 21, 18) mean?</summary>
+          <p>Karat measures gold purity. 24K is pure gold; 22K, 21K, and 18K contain progressively more alloy, so their per-gram price is lower. 21K is the most commonly traded karat in Saudi Arabia.</p>
+        </details>
+        <details>
+          <summary>How does the daily price summary work?</summary>
+          <p>In notification settings you can turn on a daily summary and choose the time and the karats you care about. Each day at your chosen time you'll receive the latest prices and the daily percentage change.</p>
+        </details>
+        <details>
+          <summary>I'm not receiving notifications.</summary>
+          <p>Make sure notifications are enabled for Dhahabi in your iPhone Settings → Notifications, and that the relevant toggles are on inside the app's notification settings. Alerts also require an internet connection to check live prices.</p>
+        </details>
+        <details>
+          <summary>How do I use the gold value calculator?</summary>
+          <p>Open the calculator, enter the weight in grams and select the karat. The app instantly shows the current value of that amount of gold in Saudi Riyal.</p>
+        </details>
+        <details>
+          <summary>Does the app require an account?</summary>
+          <p>No. Dhahabi requires no sign-up or login. All features work immediately, and we don't collect your name, email, or any personal identity.</p>
+        </details>
+      </div>
+
+      <div class="contact">
+        <p>Need more help? Email us — we usually reply within 48 hours.</p>
+        <a href="mailto:ska.locale@gmail.com">ska.locale@gmail.com</a>
+        <div class="links"><a href="https://duckygogo.github.io/dhahabi-privacy/#en">Privacy Policy →</a></div>
+      </div>
+      <p class="updated">Last updated: June 3, 2026</p>
+    </section>
+
+    <!-- ARABIC -->
+    <section id="ar" dir="rtl" lang="ar">
+      <h2>الدعم والأسئلة الشائعة</h2>
+      <div class="faq">
+        <details open>
+          <summary>كيف أضبط تنبيه سعر؟</summary>
+          <p>افتح تبويب <strong>التنبيهات</strong>، اضغط زر الإضافة (+)، اختر العيار، حدّد السعر المستهدف، واختر إن كنت تريد إشعاراً عند ارتفاع السعر فوقه أو انخفاضه تحته. سيصلك إشعار فوري لحظة بلوغ السعر هدفك.</p>
+        </details>
+        <details>
+          <summary>لماذا يختلف السعر قليلاً عن سعر الصائغ؟</summary>
+          <p>يعرض ذهبي السعر العالمي اللحظي للذهب محوّلاً إلى الريال السعودي لكل جرام. يضيف الصائغ أجور المصنعية وهامش الربح فوق ذلك، لذا يكون سعر المحل عادةً أعلى من سعر المعدن الخام الظاهر هنا.</p>
+        </details>
+        <details>
+          <summary>ماذا تعني العيارات (٢٤، ٢٢، ٢١، ١٨)؟</summary>
+          <p>العيار يقيس نقاء الذهب. عيار ٢٤ ذهب خالص، أما ٢٢ و٢١ و١٨ فتحتوي على نسبة أكبر من السبيكة، لذا يقل سعر الجرام. عيار ٢١ هو الأكثر تداولاً في السعودية.</p>
+        </details>
+        <details>
+          <summary>كيف يعمل الملخص اليومي للأسعار؟</summary>
+          <p>من إعدادات الإشعارات يمكنك تفعيل الملخص اليومي واختيار الوقت والعيارات التي تهمك. كل يوم في الوقت الذي تختاره يصلك أحدث الأسعار ونسبة التغير اليومية.</p>
+        </details>
+        <details>
+          <summary>لا تصلني الإشعارات.</summary>
+          <p>تأكّد من تفعيل الإشعارات لتطبيق ذهبي من إعدادات الآيفون ← الإشعارات، وأن المفاتيح المعنية مفعّلة داخل إعدادات الإشعارات في التطبيق. كما تتطلب التنبيهات اتصالاً بالإنترنت للتحقق من الأسعار اللحظية.</p>
+        </details>
+        <details>
+          <summary>كيف أستخدم حاسبة قيمة الذهب؟</summary>
+          <p>افتح الحاسبة، أدخل الوزن بالجرام واختر العيار، وسيعرض التطبيق فوراً القيمة الحالية لتلك الكمية بالريال السعودي.</p>
+        </details>
+        <details>
+          <summary>هل يتطلب التطبيق حساباً؟</summary>
+          <p>لا. لا يتطلب ذهبي أي تسجيل أو تسجيل دخول. تعمل جميع الميزات فوراً، ولا نجمع اسمك أو بريدك أو أي هوية شخصية.</p>
+        </details>
+      </div>
+
+      <div class="contact">
+        <p>تحتاج مساعدة إضافية؟ راسلنا عبر البريد — نردّ عادةً خلال ٤٨ ساعة.</p>
+        <a href="mailto:ska.locale@gmail.com">ska.locale@gmail.com</a>
+        <div class="links"><a href="https://duckygogo.github.io/dhahabi-privacy/#ar">سياسة الخصوصية ←</a></div>
+      </div>
+      <p class="updated">آخر تحديث: ٣ يونيو ٢٠٢٦</p>
+    </section>
+
+    <footer>© 2026 Dhahabi · ذهبي</footer>
+  </div>
+</body>
+</html>
