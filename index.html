@@ -68,7 +68,7 @@
 <!-- ========== ARABIC ========== -->
 <section id="ar" class="lang ar">
   <h2>سياسة الخصوصية</h2>
-  <div class="updated">آخر تحديث: ٢٤ مايو ٢٠٢٦</div>
+  <div class="updated">آخر تحديث: ١٥ يونيو ٢٠٢٦</div>
 
   <p>
     تطبيق <strong>ذهبي</strong> هو تطبيق مجاني لعرض أسعار الذهب في المملكة العربية السعودية.
@@ -82,13 +82,22 @@
     <li><strong>تنبيهات الأسعار</strong> — إذا أضفت تنبيه سعر (مثل "أشعرني عندما يصل عيار ٢١ إلى ٤٨٠ ريالاً")، فإننا نخزّن العيار والسعر المستهدف والاتجاه (ارتفاع/انخفاض) وحالة التنبيه. لا يرتبط هذا بأي هوية شخصية.</li>
   </ul>
 
+  <h3>التحليلات والتشخيص</h3>
+  <p>يستخدم ذهبي خدمة Google Firebase لفهم كيفية استخدام التطبيق والحفاظ على استقراره:</p>
+  <ul>
+    <li><strong>Firebase Analytics</strong> — يجمع بيانات استخدام مجهولة المصدر مثل مرات فتح التطبيق، والشاشات التي تتم زيارتها، ومدة الجلسة، والإجراءات داخل التطبيق (مثل إنشاء تنبيه سعري أو مشاركة بطاقة السعر)، إضافةً إلى معرّف الجهاز ومعلومات عامة عنه (الطراز، إصدار النظام، الدولة المستنتجة من عنوان IP). تُستخدم فقط لقياس التطبيق وتحسينه.</li>
+    <li><strong>Firebase Crashlytics</strong> — يجمع تقارير الأعطال وبيانات التشخيص عند حدوث خطأ، لمساعدتنا على إصلاح المشكلات.</li>
+    <li><strong>Firebase Performance Monitoring</strong> — يجمع بيانات الأداء مثل وقت بدء التطبيق وسرعة طلبات الشبكة.</li>
+  </ul>
+  <p>هذه البيانات غير مرتبطة بهويتك الحقيقية (لا يحتوي التطبيق على تسجيل دخول)، ولا تُباع، ولا تُستخدم لتتبعك عبر تطبيقات أو مواقع أخرى لأغراض الإعلانات. تتم معالجتها بواسطة Google وفقاً لـ<a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p>
+
   <h3>ما الذي لا نجمعه؟</h3>
   <ul>
     <li>لا نجمع الاسم أو البريد الإلكتروني أو رقم الهاتف</li>
     <li>لا يوجد تسجيل دخول أو حسابات مستخدمين</li>
-    <li>لا نتتبع موقعك الجغرافي</li>
-    <li>لا نستخدم أدوات تحليلات أو تتبع سلوك المستخدم</li>
+    <li>لا نتتبع موقعك الجغرافي الدقيق</li>
     <li>لا نعرض إعلانات ولا نشارك بياناتك مع أي جهة تسويقية</li>
+    <li>لا نتتبعك عبر تطبيقات أو مواقع أخرى</li>
     <li>لا توجد مدفوعات داخل التطبيق</li>
   </ul>
 
@@ -96,6 +105,7 @@
   <ul>
     <li><strong>Supabase</strong> — تخزين رموز الإشعارات وتنبيهات الأسعار</li>
     <li><strong>Firebase Cloud Messaging</strong> — إرسال الإشعارات فقط</li>
+    <li><strong>Firebase Analytics وCrashlytics وPerformance Monitoring</strong> — تحليلات الاستخدام وتقارير الأعطال والأداء (مجهولة المصدر)</li>
     <li><strong>GoldAPI.io</strong> — مصدر بيانات أسعار الذهب اللحظية</li>
     <li><strong>stooq.com</strong> — بيانات الأسعار التاريخية (٥٢ أسبوعاً)</li>
   </ul>
@@ -154,7 +164,7 @@
 <!-- ========== ENGLISH ========== -->
 <section id="en" class="lang en">
   <h2>Privacy Policy</h2>
-  <div class="updated">Last updated: May 24, 2026</div>
+  <div class="updated">Last updated: June 15, 2026</div>
 
   <p>
     <strong>Dhahabi (ذهبي)</strong> is a free app that displays live gold prices in Saudi Arabia.
@@ -168,13 +178,22 @@
     <li><strong>Price alerts</strong> — if you create a price alert (e.g. "notify me when 21K reaches 480 SAR"), we store the karat, target price, direction (above/below), and active status. This is not linked to any personal identity.</li>
   </ul>
 
+  <h3>Analytics &amp; Diagnostics</h3>
+  <p>Dhahabi uses Google Firebase to understand how the app is used and to keep it stable:</p>
+  <ul>
+    <li><strong>Firebase Analytics</strong> — collects anonymous usage data such as app opens, screens viewed, session length, and in-app actions (for example, creating a price alert or sharing a price card), along with a device identifier and general device information (model, OS version, country derived from IP). Used only to measure and improve the app.</li>
+    <li><strong>Firebase Crashlytics</strong> — collects crash reports and diagnostic data when the app encounters an error, so we can fix problems.</li>
+    <li><strong>Firebase Performance Monitoring</strong> — collects performance data such as app start time and network request speed.</li>
+  </ul>
+  <p>This data is not linked to your real-world identity (the app has no login), is not sold, and is not used to track you across other apps or websites for advertising. It is processed by Google as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
   <h3>What we do NOT collect</h3>
   <ul>
     <li>No name, email address, or phone number</li>
     <li>No user accounts or login</li>
-    <li>No location data</li>
-    <li>No analytics or behavioral tracking</li>
+    <li>No precise location data</li>
     <li>No advertising or data sharing with marketing parties</li>
+    <li>No tracking across other apps or websites</li>
     <li>No in-app purchases or payment data</li>
   </ul>
 
@@ -182,6 +201,7 @@
   <ul>
     <li><strong>Supabase</strong> — stores push tokens and price alert preferences</li>
     <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications only</li>
+    <li><strong>Firebase Analytics, Crashlytics &amp; Performance Monitoring</strong> — anonymous usage analytics, crash reports, and performance data</li>
     <li><strong>GoldAPI.io</strong> — source of live gold price data</li>
     <li><strong>stooq.com</strong> — historical price data (52-week range)</li>
   </ul>
