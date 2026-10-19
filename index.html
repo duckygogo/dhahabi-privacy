@@ -68,37 +68,52 @@
 <!-- ========== ARABIC ========== -->
 <section id="ar" class="lang ar">
   <h2>سياسة الخصوصية</h2>
-  <div class="updated">آخر تحديث: ٧ يوليو ٢٠٢٦</div>
+  <div class="updated">آخر تحديث: ١٩ أكتوبر ٢٠٢٦</div>
 
   <p>
     تطبيق <strong>ذهبي</strong> يعرض أسعار الذهب والفضة لحظة بلحظة في المملكة العربية السعودية.
-    التطبيق مجاني، مع اشتراك اختياري (<strong>ذهبي بريميوم</strong>) يفتح مزايا إضافية.
+    التطبيق مجاني، مع اشتراك اختياري (<strong>ذهبي برو</strong>) يفتح مزايا إضافية.
     نحن نأخذ خصوصيتك بجدية تامة. توضح هذه السياسة ما نجمعه وما لا نجمعه.
   </p>
 
   <h3>ما الذي نجمعه؟</h3>
-  <p>نجمع الحد الأدنى من البيانات اللازمة لتشغيل الإشعارات:</p>
+  <p>نجمع الحد الأدنى من البيانات اللازمة لتشغيل الإشعارات وقياس التطبيق:</p>
   <ul>
     <li><strong>رمز الإشعار (FCM Token)</strong> — يُولَّد تلقائياً من نظام Firebase ويُخزَّن في خوادمنا على Supabase. يُستخدم فقط لإرسال الإشعارات التي طلبتها. لا يحتوي على اسمك أو بريدك أو أي معلومات شخصية.</li>
-    <li><strong>تنبيهات الأسعار</strong> — إذا أضفت تنبيه سعر (مثل "أشعرني عندما يصل عيار ٢١ إلى ٤٨٠ ريالاً")، فإننا نخزّن العيار والسعر المستهدف والاتجاه (ارتفاع/انخفاض) وحالة التنبيه. لا يرتبط هذا بأي هوية شخصية.</li>
+    <li><strong>تنبيهات الأسعار</strong> — إذا أضفت تنبيه سعر (مثل "أشعرني عندما يصل عيار ٢١ إلى ٤٨٠ ريالاً")، فإننا نخزّن العيار والسعر المستهدف والاتجاه (ارتفاع/انخفاض) وحالة التنبيه. وإذا أنشأت تنبيهاً على قيمة محفظتك أو قطعة منها، نخزّن أيضاً وزن الذهب الصافي (بالغرام) الخاص بذلك التنبيه فقط — دون أسماء القطع أو أسعار شرائها. لا يرتبط هذا بأي هوية شخصية.</li>
+    <li><strong>لغة التطبيق</strong> — نخزّن لغة التطبيق مع رمز الإشعار لنرسل لك الإشعارات بلغتك.</li>
   </ul>
 
   <h3>التحليلات والتشخيص</h3>
   <p>يستخدم ذهبي خدمة Google Firebase لفهم كيفية استخدام التطبيق والحفاظ على استقراره:</p>
   <ul>
-    <li><strong>Firebase Analytics</strong> — يجمع بيانات استخدام مجهولة المصدر مثل مرات فتح التطبيق، والشاشات التي تتم زيارتها، ومدة الجلسة، والإجراءات داخل التطبيق (مثل إنشاء تنبيه سعري أو مشاركة بطاقة السعر)، إضافةً إلى معرّف الجهاز ومعلومات عامة عنه (الطراز، إصدار النظام، الدولة المستنتجة من عنوان IP). تُستخدم فقط لقياس التطبيق وتحسينه.</li>
+    <li><strong>Firebase Analytics</strong> — يجمع بيانات الاستخدام مثل مرات فتح التطبيق، والشاشات التي تتم زيارتها، ومدة الجلسة، والإجراءات داخل التطبيق (مثل إنشاء تنبيه سعري أو مشاركة بطاقة السعر)، إضافةً إلى معرّف الجهاز ومعلومات عامة عنه (الطراز، إصدار النظام، الدولة المستنتجة من عنوان IP). تُستخدم فقط لقياس التطبيق وتحسينه.</li>
     <li><strong>Firebase Crashlytics</strong> — يجمع تقارير الأعطال وبيانات التشخيص عند حدوث خطأ، لمساعدتنا على إصلاح المشكلات.</li>
     <li><strong>Firebase Performance Monitoring</strong> — يجمع بيانات الأداء مثل وقت بدء التطبيق وسرعة طلبات الشبكة.</li>
   </ul>
-  <p>هذه البيانات غير مرتبطة بهويتك الحقيقية (لا يحتوي التطبيق على تسجيل دخول)، ولا تُباع، ولا تُستخدم لتتبعك عبر تطبيقات أو مواقع أخرى لأغراض الإعلانات. تتم معالجتها بواسطة Google وفقاً لـ<a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p>
+  <p>ترتبط هذه البيانات بمعرّف للجهاز وليس باسمك أو بريدك (لا يحتوي التطبيق على تسجيل دخول)، ولا تُباع. تتم معالجتها بواسطة Google وفقاً لـ<a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p>
+
+  <h3>قياس الإعلانات والتتبع (AppsFlyer)</h3>
+  <p>نعلن عن ذهبي في منصات مثل Snapchat، ونستخدم خدمة <strong>AppsFlyer</strong> لمعرفة أي إعلان أدى إلى تثبيت التطبيق أو الاشتراك فيه. لهذا الغرض تتلقى AppsFlyer:</p>
+  <ul>
+    <li><strong>معرّف المورّد (IDFV)</strong> — معرّف يضعه iOS لتطبيقاتنا على جهازك، ونستخدمه رقماً تعريفياً للتثبيت.</li>
+    <li><strong>معرّف الإعلانات (IDFA)</strong> — <strong>فقط إذا سمحت بذلك</strong> عبر نافذة «السماح بالتتبع» من Apple. إن رفضت، لا يُرسَل.</li>
+    <li>معلومات عامة عن الجهاز (الطراز، إصدار النظام، اللغة، عنوان IP) وبيانات الحملة الإعلانية التي جئت منها.</li>
+    <li>أحداث محددة داخل التطبيق: إكمال الترحيب، وبدء الاشتراك أو الشراء (الخطة وسعرها وعملتها). لا تتلقى AppsFlyer أي بيانات دفع.</li>
+  </ul>
+  <p>
+    يُعدّ هذا «تتبعاً» وفق تعريف Apple، لذلك نطلب إذنك عبر نافذة شفافية تتبع التطبيقات (App Tracking Transparency) قبل استخدام معرّف الإعلانات.
+    يمكنك تغيير اختيارك في أي وقت من: الإعدادات ← الخصوصية والأمن ← التتبع.
+    رفضُ التتبع لا يغيّر أي ميزة في التطبيق.
+    تعالج AppsFlyer هذه البيانات وفقاً لـ<a href="https://www.appsflyer.com/legal/privacy-policy/">سياسة خصوصية AppsFlyer</a>.
+  </p>
 
   <h3>ما الذي لا نجمعه؟</h3>
   <ul>
     <li>لا نجمع الاسم أو البريد الإلكتروني أو رقم الهاتف</li>
     <li>لا يوجد تسجيل دخول أو حسابات مستخدمين</li>
     <li>لا نتتبع موقعك الجغرافي الدقيق</li>
-    <li>لا نعرض إعلانات ولا نشارك بياناتك مع أي جهة تسويقية</li>
-    <li>لا نتتبعك عبر تطبيقات أو مواقع أخرى</li>
+    <li>لا نعرض إعلانات داخل التطبيق ولا نبيع بياناتك</li>
     <li>لا نطّلع على أي بيانات دفع — جميع عمليات الشراء تتم عبر Apple (انظر «الاشتراكات والمدفوعات»)</li>
   </ul>
 
@@ -106,10 +121,11 @@
   <ul>
     <li><strong>Supabase</strong> — تخزين رموز الإشعارات وتنبيهات الأسعار</li>
     <li><strong>Firebase Cloud Messaging</strong> — إرسال الإشعارات فقط</li>
-    <li><strong>Firebase Analytics وCrashlytics وPerformance Monitoring</strong> — تحليلات الاستخدام وتقارير الأعطال والأداء (مجهولة المصدر)</li>
+    <li><strong>Firebase Analytics وCrashlytics وPerformance Monitoring</strong> — تحليلات الاستخدام وتقارير الأعطال والأداء</li>
+    <li><strong>AppsFlyer</strong> — قياس الإعلانات ونسبة التثبيتات والاشتراكات إلى الحملات (انظر أعلاه)</li>
     <li><strong>metals.dev</strong> — مصدر بيانات أسعار الذهب والفضة وأسعار الصرف اللحظية</li>
   </ul>
-  <p>لا تتلقى هذه الخدمات أي بيانات شخصية تعريفية منك.</p>
+  <p>لا تتلقى أيٌّ من هذه الخدمات اسمك أو بريدك أو رقم هاتفك أو بيانات الدفع.</p>
 
   <h3>الإشعارات</h3>
   <p>الإشعارات اختيارية بالكامل. يمكنك تفعيلها أو تعطيلها من إعدادات التطبيق أو من إعدادات الجهاز في أي وقت. أنواع الإشعارات:</p>
@@ -121,14 +137,14 @@
 
   <h3>الاشتراكات والمدفوعات</h3>
   <p>
-    يقدّم التطبيق اشتراكاً اختيارياً (<strong>ذهبي بريميوم</strong>) بخطط شهرية وسنوية وشراء لمرة واحدة
-    (مدى الحياة)، يفتح مزايا إضافية مثل محفظة الذهب وأسعار الفضة.
+    يقدّم التطبيق اشتراكاً اختيارياً (<strong>ذهبي برو</strong>) بخطط شهرية ونصف سنوية وسنوية وشراء لمرة واحدة
+    (مدى الحياة)، يفتح مزايا إضافية مثل قيمة محفظة الذهب وتنبيهات الأسعار وعالم الفضة.
   </p>
   <ul>
     <li>تتم جميع عمليات الدفع والفوترة بالكامل عبر App Store بواسطة Apple. لا نستقبل ولا نخزّن أي بيانات بطاقات أو مدفوعات، ولا يمكننا الاطلاع عليها.</li>
     <li>لا يتطلب الاشتراك إنشاء حساب — يرتبط الشراء بحساب Apple الخاص بك.</li>
     <li>إدارة الاشتراك أو إلغاؤه تتم من إعدادات حساب Apple في أي وقت.</li>
-    <li><strong>بيانات محفظتك</strong> (مقتنياتك من الذهب وأوزانها وأسعار شرائها) تُخزَّن على جهازك فقط، ولا تُرفع إلى خوادمنا ولا إلى أي طرف ثالث.</li>
+    <li><strong>بيانات محفظتك</strong> (مقتنياتك من الذهب وأوزانها وأسعار شرائها) تُخزَّن على جهازك فقط، ولا تُرفع إلى خوادمنا ولا إلى أي طرف ثالث. الاستثناء الوحيد: عند إنشاء تنبيه على قيمة المحفظة أو قطعة منها يُرسَل وزن الذهب الصافي لذلك التنبيه فقط (انظر «ما الذي نجمعه؟»).</li>
   </ul>
 
   <h3>الاحتفاظ بالبيانات</h3>
@@ -136,13 +152,15 @@
     نحتفظ برمز الإشعار وتنبيهات الأسعار طالما يبقى التطبيق مثبتاً على جهازك.
     عند حذف التطبيق أو تعطيل الإشعارات من إعدادات الجهاز، يصبح رمز الإشعار غير صالح
     ويتم حذفه من خوادمنا خلال ٣٠ يوماً.
+    تحتفظ Google (Firebase) وAppsFlyer ببيانات التحليلات والقياس وفق إعدادات الاحتفاظ لدى كل منهما وسياساتهما المرتبطة أعلاه.
   </p>
 
   <h3>حقوقك</h3>
   <p>
     بما أننا لا نخزن أي معلومات تعريفية، لا يوجد حساب يمكن حذفه يدوياً.
     لإزالة بياناتك من خوادمنا، احذف التطبيق من جهازك — سيتم تنظيف الرمز تلقائياً.
-    للاستفسار أو طلب حذف فوري راسلنا على البريد أدناه.
+    لسحب إذن التتبع: الإعدادات ← الخصوصية والأمن ← التتبع.
+    للاستفسار أو طلب الحذف راسلنا على البريد أدناه، وسنرد خلال ٣٠ يوماً.
   </p>
 
   <h3>خصوصية الأطفال</h3>
@@ -176,37 +194,52 @@
 <!-- ========== ENGLISH ========== -->
 <section id="en" class="lang en">
   <h2>Privacy Policy</h2>
-  <div class="updated">Last updated: July 7, 2026</div>
+  <div class="updated">Last updated: October 19, 2026</div>
 
   <p>
     <strong>Dhahabi (ذهبي)</strong> displays live gold and silver prices in Saudi Arabia.
-    The app is free, with an optional subscription (<strong>Dhahabi Premium</strong>) that unlocks extra features.
+    The app is free, with an optional subscription (<strong>Dhahabi Pro</strong>) that unlocks extra features.
     We take your privacy seriously. This policy explains exactly what we collect and what we don't.
   </p>
 
   <h3>What we collect</h3>
-  <p>We collect the minimum data needed to operate push notifications:</p>
+  <p>We collect the minimum data needed to operate push notifications and measure the app:</p>
   <ul>
     <li><strong>Push token (FCM Token)</strong> — automatically generated by Firebase and stored on our Supabase server. Used only to deliver notifications you requested. It contains no name, email, or personal identifiers.</li>
-    <li><strong>Price alerts</strong> — if you create a price alert (e.g. "notify me when 21K reaches 480 SAR"), we store the karat, target price, direction (above/below), and active status. This is not linked to any personal identity.</li>
+    <li><strong>Price alerts</strong> — if you create a price alert (e.g. "notify me when 21K reaches 480 SAR"), we store the karat, target price, direction (above/below), and active status. If you create an alert on your portfolio's value or on one of your pieces, we also store the pure gold weight (in grams) for that alert only — never piece names or purchase prices. This is not linked to any personal identity.</li>
+    <li><strong>App language</strong> — stored with your push token so notifications arrive in your language.</li>
   </ul>
 
   <h3>Analytics &amp; Diagnostics</h3>
   <p>Dhahabi uses Google Firebase to understand how the app is used and to keep it stable:</p>
   <ul>
-    <li><strong>Firebase Analytics</strong> — collects anonymous usage data such as app opens, screens viewed, session length, and in-app actions (for example, creating a price alert or sharing a price card), along with a device identifier and general device information (model, OS version, country derived from IP). Used only to measure and improve the app.</li>
+    <li><strong>Firebase Analytics</strong> — collects usage data such as app opens, screens viewed, session length, and in-app actions (for example, creating a price alert or sharing a price card), along with a device identifier and general device information (model, OS version, country derived from IP). Used only to measure and improve the app.</li>
     <li><strong>Firebase Crashlytics</strong> — collects crash reports and diagnostic data when the app encounters an error, so we can fix problems.</li>
     <li><strong>Firebase Performance Monitoring</strong> — collects performance data such as app start time and network request speed.</li>
   </ul>
-  <p>This data is not linked to your real-world identity (the app has no login), is not sold, and is not used to track you across other apps or websites for advertising. It is processed by Google as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+  <p>This data is linked to a device identifier, not to your name or email (the app has no login), and is never sold. It is processed by Google as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+  <h3>Ad Measurement &amp; Tracking (AppsFlyer)</h3>
+  <p>We advertise Dhahabi on platforms such as Snapchat and use <strong>AppsFlyer</strong> to learn which ad led to an install or a subscription. For this, AppsFlyer receives:</p>
+  <ul>
+    <li><strong>Identifier for Vendor (IDFV)</strong> — an identifier iOS assigns to our apps on your device; we use it as the install's ID.</li>
+    <li><strong>Advertising Identifier (IDFA)</strong> — <strong>only if you allow it</strong> in Apple's &ldquo;Allow tracking&rdquo; prompt. If you decline, it is not sent.</li>
+    <li>General device information (model, OS version, language, IP address) and the ad campaign you came from.</li>
+    <li>Specific in-app events: finishing onboarding, and starting a subscription or purchase (plan, price, and currency). AppsFlyer never receives payment details.</li>
+  </ul>
+  <p>
+    Apple considers this &ldquo;tracking&rdquo;, so we ask your permission through App Tracking Transparency before the advertising identifier is used.
+    You can change your choice at any time in Settings &rarr; Privacy &amp; Security &rarr; Tracking.
+    Declining tracking does not change any feature of the app.
+    AppsFlyer processes this data as described in <a href="https://www.appsflyer.com/legal/privacy-policy/">AppsFlyer's Privacy Policy</a>.
+  </p>
 
   <h3>What we do NOT collect</h3>
   <ul>
     <li>No name, email address, or phone number</li>
     <li>No user accounts or login</li>
     <li>No precise location data</li>
-    <li>No advertising or data sharing with marketing parties</li>
-    <li>No tracking across other apps or websites</li>
+    <li>No ads inside the app, and we never sell your data</li>
     <li>We never see your payment data — all purchases are handled by Apple (see &ldquo;Subscriptions &amp; Payments&rdquo;)</li>
   </ul>
 
@@ -214,10 +247,11 @@
   <ul>
     <li><strong>Supabase</strong> — stores push tokens and price alert preferences</li>
     <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications only</li>
-    <li><strong>Firebase Analytics, Crashlytics &amp; Performance Monitoring</strong> — anonymous usage analytics, crash reports, and performance data</li>
+    <li><strong>Firebase Analytics, Crashlytics &amp; Performance Monitoring</strong> — usage analytics, crash reports, and performance data</li>
+    <li><strong>AppsFlyer</strong> — ad measurement: attributing installs and subscriptions to campaigns (see above)</li>
     <li><strong>metals.dev</strong> — source of live gold, silver, and currency exchange-rate data</li>
   </ul>
-  <p>None of these services receive personally identifiable information from you.</p>
+  <p>None of these services receive your name, email, phone number, or payment details.</p>
 
   <h3>Notifications</h3>
   <p>All notifications are fully optional. You can enable or disable them at any time from the app's Settings tab or from your device Settings. Notification types:</p>
@@ -229,14 +263,14 @@
 
   <h3>Subscriptions &amp; Payments</h3>
   <p>
-    The app offers an optional subscription (<strong>Dhahabi Premium</strong>) with monthly, yearly,
-    and one-time lifetime plans, unlocking extra features such as the gold portfolio and silver prices.
+    The app offers an optional subscription (<strong>Dhahabi Pro</strong>) with monthly, six-month, yearly,
+    and one-time lifetime plans, unlocking extra features such as your portfolio's live value, price alerts, and the silver section.
   </p>
   <ul>
     <li>All payments and billing are handled entirely by Apple through the App Store. We never receive, store, or have access to any card or payment details.</li>
     <li>No account is required — purchases are tied to your Apple account.</li>
     <li>You can manage or cancel your subscription at any time from your Apple account settings.</li>
-    <li><strong>Your portfolio data</strong> (your gold holdings, weights, and purchase prices) is stored only on your device and is never uploaded to our servers or any third party.</li>
+    <li><strong>Your portfolio data</strong> (your gold holdings, weights, and purchase prices) is stored only on your device and is never uploaded to our servers or any third party. The one exception: when you create an alert on your portfolio's value or on one piece, the pure gold weight for that alert is sent (see &ldquo;What we collect&rdquo;).</li>
   </ul>
 
   <h3>Data Retention</h3>
@@ -244,13 +278,15 @@
     We retain your push token and price alerts for as long as the app remains installed on your device.
     When you uninstall the app or disable notifications in your device settings, the push token becomes
     invalid and is removed from our servers within 30 days.
+    Google (Firebase) and AppsFlyer keep analytics and measurement data according to their own retention settings and the policies linked above.
   </p>
 
   <h3>Your Rights</h3>
   <p>
     Because we don't store any personally identifying information, there is no account for you to delete manually.
     To remove your data from our servers, uninstall the app from your device — your token will be cleaned up automatically.
-    For inquiries or to request immediate deletion, contact us at the email below.
+    To withdraw tracking permission: Settings &rarr; Privacy &amp; Security &rarr; Tracking.
+    For inquiries or deletion requests, email us below; we reply within 30 days.
   </p>
 
   <h3>Children's Privacy</h3>
